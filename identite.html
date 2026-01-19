@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>BIOGRAPHIE</title>
+    <style>
+        /* ===== STYLE GENERAL ===== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* ===== CARTE ===== */
+        .carte {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 450px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .carte:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        /* ===== IMAGE PROFIL ===== */
+        .profil {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 15px auto;
+            border: 3px solid #66a6ff; /* optionnel : bordure autour de la photo */
+        }
+
+        /* ===== LIGNES D'INFO ===== */
+        .ligne {
+            display: flex;
+            margin: 12px 0;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .ligne:hover {
+            background-color: #f0f8ff;
+        }
+
+        .titre {
+            width: 180px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .valeur {
+            flex: 1;
+            color: #333;
+        }
+
+        /* ===== BOUTONS ===== */
+        .boutons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+        }
+
+        .btn-plus {
+            background-color: #ff4d4f;
+        }
+
+        .btn-plus:hover {
+            background-color: #d9363e;
+        }
+
+        .btn-retour {
+            background-color: #555;
+        }
+
+        .btn-retour:hover {
+            background-color: #333;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 500px) {
+            .carte {
+                width: 90%;
+                padding: 30px;
+            }
+
+            .titre {
+                width: 150px;
+                font-size: 15px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            .profil {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carte">
+        <!-- IMAGE DE PROFIL -->
+        <img src="im6.jpg" alt="Photo de profil" class="profil">
+
+        <h1>BIOGRAPHIE</h1>
+
+        <div class="ligne">
+            <div class="titre">NOM :</div>
+            <div class="valeur">....................</div>
+        </div>
+
+        <div class="ligne">
+            <div class="titre">POST NOM :</div>
+            <div class="valeur">....................</div>
+        </div>
+
+        <div class="ligne">
+            <div class="titre">PRÉNOM :</div>
+            <div class="valeur">....................</div>
+        </div>
+
+        <div class="ligne">
+            <div class="titre">DATE ET LIEU DE NAISSANCE :</div>
+            <div class="valeur">....................</div>
+        </div>
+
+        <div class="ligne">
+            <div class="titre">ÉTUDIE À :</div>
+            <div class="valeur">....................</div>
+        </div>
+
+        <div class="ligne">
+            <div class="titre">PROMOTION :</div>
+            <div class="valeur">....................</div>
+        </div>
+
+        <!-- Boutons -->
+        <div class="boutons">
+            <button class="btn-retour" onclick="history.back()">RETOUR</button>
+            <button class="btn-plus" onclick="window.location.href='index.html'">VOIR PLUS</button>
+        </div>
+    </div>
+
+</body>
+</html>

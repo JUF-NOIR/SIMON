@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site personnel</title>
+
+    <!-- STYLE CSS -->
+    <style>
+        /* ===== STYLE GENERAL ===== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            animation: apparition 1.2s ease-in-out;
+        }
+
+        /* Animation à l’ouverture de la page */
+        @keyframes apparition {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== MENU DE NAVIGATION ===== */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CONTENU ===== */
+        .contenu {
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* ===== GALERIE D'IMAGES AVEC DESCRIPTIONS ===== */
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            display: flex;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .image-container img {
+            width: 500px;  /* largeur fixe */
+            height: 500px; /* hauteur fixe */
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            flex: 1; /* prend le reste de l’espace */
+            font-size: 16px;
+            color: #333;
+            overflow-wrap: break-word;
+            text-align: justify;
+        }
+
+        /* ===== TABLEAU ===== */
+        table {
+            width: 100%;           /* prend toute la largeur disponible */
+            max-width: 1200px;     /* largeur max pour grands écrans */
+            margin: 0 auto 40px;   /* centré horizontalement et espacé du contenu suivant */
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* ===== BOUTON RETOUR ===== */
+        .zone-bouton {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .btn-retour {
+            padding: 12px 30px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .btn-retour:hover {
+            background-color: #333;
+            transform: scale(1.15);
+        }
+
+        /* ===== RESPONSIVE (TELEPHONE & tablette) ===== */
+        @media (max-width: 1024px) {
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-retour {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="contenu">
+
+        <h1>Bienvenue sur mon site Web</h1>
+           <!-- MENU DE NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="identite.html">Accueil</a></li>
+            <li><a href="identite.html">Identité</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+        </ul>
+    </nav>
+
+        <h2 id="galerie">Photos de mon enfance et de mon âge actuel</h2>
+
+        <!-- GALERIE D'IMAGES AVEC DESCRIPTIONS -->
+        <div class="images">
+            <div class="image-container">
+                <img src="im1.jpeg" alt="Moi à 3 ans">
+                <div class="description">
+                    <h1><p>Mon Enfance</p></h1>
+<p>Depuis mon enfance, la vie ne m’a pas toujours été douce. J’ai traversé de nombreuses épreuves qui, parfois, semblaient insurmontables. Les difficultés financières, les tensions familiales et les obstacles du quotidien faisaient partie de mon quotidien.</p>
+<p>Cependant, au milieu de ces défis, j’ai découvert une force intérieure insoupçonnée, nourrie par ma foi en Dieu. Ces expériences m’ont appris la persévérance, l’importance de la patience et la valeur du courage. Chaque obstacle sur mon chemin m’a façonné et m’a permis de grandir en tant que personne.</p>
+<p>Aujourd’hui, je comprends que ces moments, bien que douloureux, étaient essentiels pour me préparer à affronter la vie avec détermination et sérénité. Mon enfance m’a appris que la résilience et l’espoir peuvent transformer les difficultés en véritables leçons de vie, et que même dans les tempêtes, il est possible de trouver la lumière.</p>
+<p>Au fil des années, j’ai appris à regarder mes expériences passées avec gratitude plutôt qu’avec regret. Chaque sourire volé, chaque petit succès et chaque échec m’ont apporté une leçon unique sur la vie et sur moi-même. Ces souvenirs, bien que parfois douloureux, sont devenus des fondations solides sur lesquelles je peux bâtir mon avenir.</p>
+<p>Ma famille, malgré ses imperfections, m’a aussi transmis des valeurs essentielles : le respect, l’amour et la solidarité. J’ai compris que même dans les situations difficiles, le soutien et la compréhension des proches peuvent être une source immense de réconfort et de force. Cela m’a appris à chérir les liens humains et à toujours tendre la main à ceux qui en ont besoin.</p>
+<p>Enfin, mon enfance m’a enseigné que chaque obstacle peut devenir une opportunité. Les difficultés m’ont poussé à me dépasser, à cultiver la patience et à chercher des solutions plutôt que de me laisser abattre. Aujourd’hui, je regarde l’avenir avec confiance, prêt à affronter ce que la vie me réserve, fort de mes expériences passées et de la foi qui continue de guider chacun de mes pas.</p>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="im2.jpeg" alt="Moi à 3 ans">
+                <div class="description">
+                        <h1><p>Ma Vie Chrétienne  </p>  </h2>
+
+  <p>Ma vie chrétienne a commencé dès mon enfance. Je suis né dans une famille chrétienne, où la foi et les valeurs spirituelles occupaient une place importante. Très tôt, j’ai été guidé par l’exemple de mes parents et des adultes autour de moi, qui m’ont montré l’importance de prier, de vivre selon les enseignements de la Bible et de servir les autres avec amour.  </p>
+ <p>À l’âge de 15 ans, j’ai pris une décision qui a profondément marqué ma vie : j’ai donné mon cœur au Seigneur. Ce choix a été un tournant majeur, un moment où j’ai senti une présence divine m’accompagner et transformer mon existence. Depuis ce jour, ma relation avec Dieu est devenue le fondement de ma vie, me donnant force, espoir et direction.  </p>
+  <p>Grâce à cette foi, j’ai découvert la puissance de la grâce divine. Dans les moments de doute, de peur ou de solitude, ma relation avec le Seigneur m’a permis de rester ferme, de garder confiance et de chercher des solutions avec patience et courage. La prière est devenue pour moi un refuge et un moyen de communion constante avec Dieu.  </p>
+  <p>Au fil des années, ma vie chrétienne m’a également appris l’importance des dons spirituels et du service aux autres. J’ai compris que la foi ne se limite pas à la prière, mais qu’elle s’exprime dans nos actions, notre comportement et notre manière d’aimer les autres. Servir ceux qui sont dans le besoin, écouter, conseiller et partager la parole de Dieu sont devenus des aspects essentiels de ma vie.  </p>
+<p>Enfin, ma vie chrétienne continue de m’inspirer à grandir chaque jour. Elle m’enseigne l’humilité, le pardon et la persévérance. Même face aux difficultés, je sais que je ne suis jamais seul, et que la foi peut transformer les épreuves en opportunités de croissance personnelle et spirituelle. Cette relation vivante avec Dieu est le guide de chacun de mes pas et la source de ma paix intérieure.  </p>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="im3.jpeg" alt="Moi actuellement">
+                <div class="description">
+                <h2><p>Mes Passions et Loisirs  </p>  </h2>
+
+  <p>Je suis passionné par l’informatique et l’électricité. J’adore explorer les nouvelles technologies, concevoir des projets innovants et transformer des idées en réalisations concrètes. Ces domaines stimulent ma curiosité et m’encouragent à toujours apprendre et expérimenter.  </p>
+  <p>Le design graphique est un autre domaine qui me tient à cœur. Il me permet d’exprimer ma créativité et de donner vie à mes idées à travers des visuels attrayants et originaux. J’apprécie particulièrement la manière dont l’art numérique peut communiquer un message, raconter une histoire ou inspirer les autres.  </p>
+  <p>En parallèle, j’aime passer du temps à résoudre des défis techniques et participer à des projets collaboratifs. Travailler sur des projets pratiques me permet non seulement d’appliquer mes connaissances, mais aussi de développer mon esprit critique, ma patience et ma persévérance.  </p>
+  <p>Enfin, mes loisirs me servent aussi de moments de détente et d’inspiration. La lecture, les jeux éducatifs et l’exploration des nouvelles tendances technologiques nourrissent ma passion et m’inspirent à continuer à créer et à apprendre chaque jour. Ces activités font partie intégrante de ma personnalité et me motivent à construire un futur riche en innovation et en créativité.  </p>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="im4.jpeg" alt="Moi actuellement">
+                <div class="description">
+                      <h2><p>Développement Personnel</p></h2>
+
+  <p>Actuellement, je suis étudiant à l’École Supérieure des Ingénieurs Industriels, où je poursuis ma formation avec sérieux, engagement et détermination. Je considère mes études non seulement comme un moyen d’acquérir des compétences techniques, mais aussi comme une occasion de grandir personnellement et spirituellement.  </p>
+  <p>Parallèlement, je m’efforce de développer mon esprit entrepreneurial et créatif. Je m’investis dans des projets concrets où je peux mettre en pratique mes connaissances et mes expériences. Ces activités me permettent d’apprendre à prendre des initiatives, à résoudre des problèmes et à travailler de manière autonome tout en restant ouvert à l’apprentissage continu.  </p>
+  <p>Sur le plan spirituel, je m’engage activement à soutenir et prier pour ceux qui en ont besoin. Ma foi m’inspire à exercer mes talents au service des autres, à développer mes aptitudes d’entrepreneur et à contribuer positivement à ma communauté.  </p>
+  <p>Mon objectif est de progresser chaque jour, non seulement sur le plan académique et professionnel, mais aussi en tant qu’individu capable de laisser un impact positif autour de moi. Je souhaite allier compétence, foi et service afin de devenir une personne complète, prête à relever les défis de la vie avec courage et responsabilité  </p>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="im5.jpeg" alt="Moi actuellement">
+                <div class="description">
+                      <h2><p>Mes Rêves  </p></h2>
+  <p>Mes rêves sont guidés par ma passion pour l’informatique et mon engagement spirituel. Dans le domaine technologique, je souhaite créer des solutions innovantes, explorer de nouvelles possibilités dans l’informatique et contribuer à des projets qui ont un impact positif sur la société. Mon ambition est de transformer mes idées et mes compétences en réalisations concrètes qui peuvent améliorer la vie des autres et apporter des solutions utiles à notre monde.  </p>
+  <p>Sur le plan spirituel, je rêve de continuer à grandir dans ma foi et mon développement personnel, et de guider les autres à travers un témoignage vivant de la puissance et de l’amour de Dieu. Je souhaite inspirer ceux qui m’entourent en alliant réussite personnelle, service et engagement envers ma communauté.  </p>
+  <p>En résumé, mes rêves sont de devenir une personne capable de combiner expertise, créativité et foi pour avoir un impact durable et positif, en utilisant mes talents pour servir, inspirer et transformer le monde qui m’entoure.  </p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Tableau</h2>
+
+        <!-- TABLEAU CENTRÉ -->
+        <table>
+            <tr>
+                <th>Colonne 1</th>
+                <th>Colonne 2</th>
+                <th>Colonne 3</th>
+                <th>Colonne 4</th>
+            </tr>
+            <!-- 16 lignes vides -->
+            <tr><td>1</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td></td><td></td><td></td></tr>
+            <tr><td>3</td><td></td><td></td><td></td></tr>
+            <tr><td>4</td><td></td><td></td><td></td></tr>
+            <tr><td>5</td><td></td><td></td><td></td></tr>
+            <tr><td>6</td><td></td><td></td><td></td></tr>
+            <tr><td>7</td><td></td><td></td><td></td></tr>
+            <tr><td>8</td><td></td><td></td><td></td></tr>
+            <tr><td>9</td><td></td><td></td><td></td></tr>
+            <tr><td>10</td><td></td><td></td><td></td></tr>
+            <tr><td>11</td><td></td><td></td><td></td></tr>
+            <tr><td>12</td><td></td><td></td><td></td></tr>
+            <tr><td>13</td><td></td><td></td><td></td></tr>
+            <tr><td>14</td><td></td><td></td><td></td></tr>
+            <tr><td>15</td><td></td><td></td><td></td></tr>
+            <tr><td>16</td><td></td><td></td><td></td></tr>
+        </table>
+
+        <!-- BOUTON RETOUR -->
+        <div class="zone-bouton">
+            <button class="btn-retour" onclick="window.location.href='identite.html'">
+                RETOUR
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
